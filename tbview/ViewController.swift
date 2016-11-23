@@ -34,8 +34,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as! myTableViewCell
-        cell.mylabel.spacing = 10
-        cell.mylabel.text = "hoooo"
+//        cell.mylabel.spacing = 10
+        cell.mylabel.text = "aloha"
         
         return cell
         

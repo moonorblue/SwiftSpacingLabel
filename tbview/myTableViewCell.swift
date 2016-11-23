@@ -12,7 +12,7 @@ class myTableViewCell: UITableViewCell {
 
     @IBOutlet weak var mylabel: customLabel! {
         didSet {
-
+            mylabel.spacing = 5
         }
     }
    
