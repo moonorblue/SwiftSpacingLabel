@@ -9,7 +9,20 @@
 import UIKit
 
 class customLabel: UILabel {
-
+    var spacing: Double = 0.0
+    override var text: String? {
+        didSet {
+            print("did set String")
+            let myAttribute = [NSKernAttributeName: spacing ]
+            let myAttrString = NSAttributedString(string: text!, attributes: myAttribute)
+            attributedText = myAttrString
+        }
+    }
+    override var attributedText: NSAttributedString? {
+        didSet {
+            print("did set AttributedString")
+        }
+    }
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

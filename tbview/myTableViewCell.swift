@@ -10,8 +10,15 @@ import UIKit
 
 class myTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var mylabel: customLabel! {
+        didSet {
+
+        }
+    }
+   
     override func awakeFromNib() {
         super.awakeFromNib()
+        print("awake")
         // Initialization code
     }
 
@@ -19,6 +26,10 @@ class myTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setmylabel(_ label:UILabel ) {
+        
     }
     
 }
